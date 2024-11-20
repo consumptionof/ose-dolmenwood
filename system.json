@@ -1,8 +1,8 @@
 {
-  "name": "ose-dev",
-  "id": "ose-dev",
-  "title": "Old-School Essentials Development Build",
-  "description": "Simple, robust rules compatible with decades of Basic/Expert material",
+  "name": "ose-dolmenwood",
+  "id": "ose-dolmenwood",
+  "title": "Old-School Essentials Dolmenwood Experiment",
+  "description": "An experimental version of the OSE Foundry system based on Dolmenwood",
   "version": "AUTOMATICALLY REPLACED BY GITHUB WORKFLOW ACTION",
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "12",
@@ -97,7 +97,7 @@
   "url": "AUTOMATICALLY REPLACED BY GITHUB WORKFLOW ACTION",
   "manifest": "AUTOMATICALLY REPLACED BY GITHUB WORKFLOW ACTION",
   "download": "AUTOMATICALLY REPLACED BY GITHUB WORKFLOW ACTION",
-  "bugs": "https://github.com/vttred/ose/issues",
+  "bugs": "https://github.com/consumptionof/ose-dolmenwood/issues",
   "flags": {
     "allowBugReporter": true
   },

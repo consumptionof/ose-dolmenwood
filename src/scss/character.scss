@@ -4,7 +4,7 @@
 /*  Basic Structure                          */
 /* ----------------------------------------- */
 .ose.sheet.actor.character {
-  min-width: 450px;
+  min-width: 550px;
   min-height: 550px;
 
   /* ----------------------------------------- */
@@ -92,6 +92,7 @@
           }
         }
         .description {
+          flex-grow: 1;
           margin: 2px;
           .editor {
             .tox .tox-tbtn {
@@ -101,6 +102,7 @@
           }
         }
         &.notes {
+          flex-grow: 1;
           margin: 2px;
           .editor {
             height: 150px;

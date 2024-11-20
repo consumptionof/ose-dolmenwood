@@ -125,7 +125,8 @@ const OseDice = {
 
       case "below": {
         // MORALE, EXPLORATION
-        if (roll.total <= result.target) {
+        // Dolmenwood apparently wants the total to be higher than the target.
+        if (roll.total >= result.target) {
           result.isSuccess = true;
         } else {
           result.isFailure = true;
@@ -136,10 +137,11 @@ const OseDice = {
 
       case "check": {
         // SCORE CHECKS (1s and 20s)
+        // These are reversed for Dolmenwood purposes.
         if (die === 1 || (roll.total <= result.target && die < 20)) {
-          result.isSuccess = true;
-        } else {
           result.isFailure = true;
+        } else {
+          result.isSuccess = true;
         }
 
         break;

@@ -6,6 +6,9 @@
 <h1 align="center">
   Old-School Essentials – Foundry VTT Edition
 </h1>
+<h2 align="center">
+  PARTIALLY CONVERTED TO DOLMENWOOD BY SOMEONE WHO HAS NO IDEA WHAT HE'S DOING
+</h2>
 <p align="center">
   <!-- BEGIN TEXT REQUIRED BY LICENSE -->Requires <strong><em>Old-School Essentials</em></strong> Classic Fantasy or Advanced Fantasy.<!-- END TEXT REQUIRED BY LICENSE --> Find the game at <a href="https://necroticgnome.com">Necrotic Gnome's website</a>. Buy <a href="https://www.drivethrurpg.com/browse/pub/5606/Necrotic-Gnome?filters=0_0_0_100073_0&affiliate_id=1488516">Old-School Essentials: Advanced Fantasy and more</a> for Foundry VTT.
 </p>
@@ -18,14 +21,16 @@
 [![Foundry Hub Comments](https://img.shields.io/endpoint?logoColor=white&url=https%3A%2F%2Fwww.foundryvtt-hub.com%2Fwp-json%2Fhubapi%2Fv1%2Fpackage%2Fose%2Fshield%2Fcomments)](https://www.foundryvtt-hub.com/package/ose/)
 [![Crowdin](https://badges.crowdin.net/ose/localized.svg)](https://crowdin.com/project/ose)
 
+## EXTREMELY IMPORTANT
+
+This system is based on the Old-School Essentials system for Foundry VTT. My friend asked me to make some edits to the system so that it would work for an upcoming Dolmenwood game. The only changes in this system are those specifically requested by him. I have never developed a Foundry module, let alone system, before. This is a hobby experiment made for my friends, first and foremost. I can't guarantee this will work for anyone. If you use it and it doesn't work, that's probably my fault. Besides the installation section, nothing below in the readme has been modified.
+
 ## Installation
 
-Find this Foundry VTT game system within Foundry VTT's system browser with the search term `ose`.
-
-You may also copy the manifest link below and paste it into the manifest link input box.
+Copy the manifest link below and paste it into the manifest link input box.
 
 ```console
-https://github.com/vttred/ose/releases/latest/download/system.json
+https://github.com/consumptionof/ose-dolmenwood/releases/latest/download/system.json
 ```
 
 ### Open Game Content Compendium

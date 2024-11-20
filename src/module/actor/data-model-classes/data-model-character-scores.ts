@@ -176,6 +176,9 @@ export default class OseDataModelCharacterScores implements CharacterScores {
     );
   }
 
+
+  // This used to be Open Doors in OSE. I can't be bothered to change the var names,
+  // so now it just returns a different attribute value instead.
   get #strOpenDoorsMod() {
     return OseDataModelCharacterScores.valueFromTable(
       OseDataModelCharacterScores.openDoorMods,
