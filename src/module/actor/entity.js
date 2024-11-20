@@ -282,13 +282,14 @@ export default class OseActor extends Actor {
     const actorData = this.system;
 
     const label = game.i18n.localize(`OSE.scores.${score}.long`);
-    const rollParts = ["1d20"];
+    const rollParts = ["1d6", actorData.scores[score].mod];
 
     const data = {
       actor: this,
       roll: {
-        type: "check",
-        target: actorData.scores[score].value,
+        type: "above",
+        // target: actorData.scores[score].value,
+        target: 4,
       },
 
       details: game.i18n.format("OSE.roll.details.attribute", {
