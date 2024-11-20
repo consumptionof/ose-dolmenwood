@@ -70,7 +70,6 @@ jobs:
           name: ${{ github.event.release.name }}
           draft: false
           prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: "./system.json, ./system.zip"
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
