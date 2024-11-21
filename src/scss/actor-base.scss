@@ -138,8 +138,14 @@
   }
   .sheet-body {
     flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
     .tab {
       height: 100%;
+      .active {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .attributes {
       list-style: none;
@@ -212,6 +218,8 @@
       }
     }
     .inventory {
+      display: flex;
+      flex-direction: column;
       overflow: auto;
       .header-spells {
         line-height: 30px;

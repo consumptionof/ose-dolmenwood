@@ -46,6 +46,8 @@
   /* ----------------------------------------- */
   .sheet-body {
     flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
     .tab {
       height: 100%;
     }
@@ -68,11 +70,11 @@
     .notes-tab {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      flex: 0 0 100%;
       .inventory {
         display: flex;
         flex-direction: column;
-        flex: 0 0 50%;
+        flex: 0 1 50%;
         .languages {
           margin: 2px;
           flex: 0 0 130px;
@@ -118,6 +120,7 @@
           margin: 2px;
           .editor {
             flex: 0 1 100%;
+            overflow: auto;
           }
         }
         .lang-bio {
@@ -127,7 +130,8 @@
       .resizable-editor {
         flex: 0 1 100%;
         .editor {
-          flex: 0 0 100%;
+          flex: 0 1 100%;
+          overflow: auto;
         }
       }
     }
