@@ -128,6 +128,8 @@
         }
       }
       .resizable-editor {
+        display: flex;
+        flex-direction: column;
         flex: 0 1 100%;
         .editor {
           flex: 0 1 100%;
