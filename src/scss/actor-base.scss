@@ -11,6 +11,10 @@
 
 .ose.sheet.actor {
   $detailsHeight: 44px;
+  .whole-window {
+    display: flex;
+    flex-direction: column;
+  }
   .blinking {
     font-weight: bold;
     animation: 0.8s ease-in 1s infinite alternate notify;
@@ -133,7 +137,7 @@
     }
   }
   .sheet-body {
-    height: calc(100% - 140px);
+    flex: 0 1 100%;
     .tab {
       height: 100%;
     }
