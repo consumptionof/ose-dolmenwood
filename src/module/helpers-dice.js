@@ -388,7 +388,7 @@ const OseDice = {
     let rolled = false;
     const template = `${OSE.systemPath()}/templates/chat/roll-dialog.html`;
     const dialogData = {
-      formula: parts.join(" "),
+      formula: parts.join("+"),
       data,
       rollMode: game.settings.get("core", "rollMode"),
       rollModes: CONFIG.Dice.rollModes,
@@ -465,7 +465,7 @@ const OseDice = {
     let rolled = false;
     const template = `${OSE.systemPath()}/templates/chat/roll-dialog.html`;
     const dialogData = {
-      formula: parts.join(" "),
+      formula: parts.join("+"),
       data,
       rollMode: data.roll.blindroll
         ? "blindroll"

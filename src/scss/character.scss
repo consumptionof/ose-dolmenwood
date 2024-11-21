@@ -66,17 +66,26 @@
     }
     .notes-tab {
       display: flex;
+      flex-direction: column;
+      height: 50%;
       .inventory {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 100%;
         .languages {
+          flex-grow: 1;
           margin: 2px;
           flex: 0 0 130px;
+          display: flex;
+          flex-direction: column;
           .item-category-title {
             .item-controls {
               flex: 0 0 20px;
             }
           }
           ol {
-            height: 100px;
+            flex-grow: 1;
+            height: 100%;
             overflow: auto;
             list-style: none;
             padding: 5px;
@@ -95,20 +104,28 @@
         .description {
           flex-grow: 1;
           margin: 2px;
+          display: flex;
+          flex-direction: column;
           .editor {
+            flex: 0 1 100%;
             .tox .tox-tbtn {
               height: 24px;
             }
-            height: 110px;
           }
         }
         &.notes {
           flex-grow: 1;
           margin: 2px;
           .editor {
-            height: 150px;
+            flex: 0 1 100%;
           }
         }
+        .lang-bio {
+          flex: 1 1 100%;
+        }
+      }
+      .resizable-editor {
+        flex: 1 1 100%;
       }
     }
     .health {
