@@ -50,7 +50,7 @@ jobs:
 
       # Getting new dev version number
       - name: Get next version
-        uses: eecetech/version-increment@latest
+        uses: reecetech/version-increment@latest
         id: version
         with:
           scheme: semver
