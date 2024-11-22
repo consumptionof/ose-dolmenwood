@@ -48,6 +48,15 @@ jobs:
       - name: Run Gulp build script
         run: npm run build
 
+      # Getting new dev version number
+      - name: Get next version
+        uses: eecetech/version-increment@latest
+        id: version
+        with:
+          scheme: semver
+          increment: patch
+
+
       # Insert "manifest", "download", and "version" for this release into the system.json manifest file
       # Doing it this way works for forks as well
       - name: Insert release-specific values in manifest file
@@ -59,10 +68,10 @@ jobs:
           name: ose-dolmenwood
           id: ose-dolmenwood
           title: "Old-School Essentials Dolmenwood Experiment"
-          version: ${{github.event.release.tag_name}}
+          version: ${{steps.version.outputs.version}}
           url: https://github.com/${{github.repository}}
           manifest: https://github.com/${{github.repository}}/releases/latest/download/system.json
-          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/system.zip
+          download: https://github.com/${{github.repository}}/releases/download/dev/system.zip
 
       # Replace "ose-dev" with "ose" in all files inside the dist folder
       - name: Replace 'ose-dev' with 'ose' in dist folder
@@ -85,9 +94,9 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true # Set this to false if you want to prevent updating existing releases
-          name: "latest"
+          name: "dev"
           draft: false
           prerelease: false
           artifacts: "./system.json, ./system.zip"
-          tag: "latest"
+          tag: "dev"
           body: ${{ github.event.release.body }}
