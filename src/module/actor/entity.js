@@ -388,7 +388,7 @@ export default class OseActor extends Actor {
     const data = {
       actor: this,
       roll: {
-        type: "below",
+        type: "exploration",
         target: actorData.exploration[expl],
         blindroll: true,
       },

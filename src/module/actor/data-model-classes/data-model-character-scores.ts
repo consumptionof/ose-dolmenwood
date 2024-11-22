@@ -93,7 +93,7 @@ export default class OseDataModelCharacterScores implements CharacterScores {
    */
   static literacyMods = {
     0: "",
-    3: "OSE.Illiterate",
+    // 3: "OSE.Illiterate",
     6: "OSE.LiteracyBasic",
     9: "OSE.Literate",
   };
