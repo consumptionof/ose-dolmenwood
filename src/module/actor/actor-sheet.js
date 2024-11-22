@@ -557,7 +557,7 @@ export default class OseActorSheet extends ActorSheet {
       this._rollAttack(event);
     });
 
-    html.find(".hit-dice .attribute-name").click((event) => {
+    html.find(".hit-dice h4").click((event) => {
       this.actor.rollHitDice({ event });
     });
 

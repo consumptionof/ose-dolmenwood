@@ -188,7 +188,7 @@ export default class OseActorSheetCharacter extends OseActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
-    html.find(".ability-score .attribute-name a").click((ev) => {
+    html.find(".ability-score .attribute-name h4").click((ev) => {
       const actorObject = this.actor;
       const element = ev.currentTarget;
       const { score } = element.parentElement.parentElement.dataset;
@@ -200,7 +200,7 @@ export default class OseActorSheetCharacter extends OseActorSheet {
       }
     });
 
-    html.find(".exploration .attribute-name a").click((ev) => {
+    html.find(".exploration .attribute-name h4").click((ev) => {
       const actorObject = this.actor;
       const element = ev.currentTarget;
       const expl = element.parentElement.parentElement.dataset.exploration;
